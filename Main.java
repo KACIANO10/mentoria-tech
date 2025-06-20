@@ -1,24 +1,15 @@
-import java.util.Scanner;
-
-class Main {
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
-        // Criação do objeto Scanner para leitura de dados
-        Scanner scanner = new Scanner(System.in);
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-        // Solicita ao usuário que insira a temperatura em Celsius
-        System.out.print("Digite a temperatura em Celsius: ");
-        double celsius = scanner.nextDouble();
-
-        // Realiza as conversões
-        double fahrenheit = (celsius * 9/5) + 32;
-        double kelvin = celsius + 273.15;
-10000000
-        // Exibe os resultados
-        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
-        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
-        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
-
-        // Fecha o scanner
-        scanner.close();
+        for (int i = 1; i <= 5; i++) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.println("i = " + i);
+        }
     }
 }
